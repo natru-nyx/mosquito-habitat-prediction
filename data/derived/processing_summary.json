@@ -1,0 +1,94 @@
+{
+  "region": "pilani",
+  "timestamp": "2025-09-10T10:32:43.024077Z",
+  "bands_found": [
+    "B02",
+    "B03",
+    "B04",
+    "B08",
+    "B11",
+    "B12"
+  ],
+  "indices_computed": [
+    "NDVI",
+    "NDWI",
+    "MNDWI",
+    "SAVI",
+    "EVI",
+    "LST_PROXY",
+    "CLOUD_MASK"
+  ],
+  "cluster_feature_order": [
+    "EVI",
+    "LST_PROXY",
+    "MNDWI",
+    "NDVI",
+    "NDWI",
+    "SAVI"
+  ],
+  "cluster_centers": [
+    [
+      0.9886699914932251,
+      0.19968940317630768,
+      -0.3506094813346863,
+      0.8307716846466064,
+      -0.6313886046409607,
+      0.6107417345046997
+    ],
+    [
+      44.409358978271484,
+      0.1877399981021881,
+      -0.11222058534622192,
+      0.0921635627746582,
+      0.6646289229393005,
+      0.025302916765213013
+    ],
+    [
+      -65.192626953125,
+      0.20914998650550842,
+      -0.18417683243751526,
+      0.576166033744812,
+      0.5245727300643921,
+      0.08832526206970215
+    ],
+    [
+      0.17171716690063477,
+      0.2005535364151001,
+      -0.23087528347969055,
+      0.26841896772384644,
+      0.01610228419303894,
+      0.12216068804264069
+    ],
+    [
+      143.98342895507812,
+      0.1964000016450882,
+      -0.0708831399679184,
+      -0.41103455424308777,
+      0.8441512584686279,
+      -0.05492803454399109
+    ]
+  ],
+  "files": {
+    "bands": {
+      "B02": "/home/natru/Documents/mech sop/bio sop/data/sample/sample_B02.tif",
+      "B03": "/home/natru/Documents/mech sop/bio sop/data/sample/sample_B03.tif",
+      "B04": "/home/natru/Documents/mech sop/bio sop/data/sample/sample_B04.tif",
+      "B08": "/home/natru/Documents/mech sop/bio sop/data/sample/sample_B08.tif",
+      "B11": "/home/natru/Documents/mech sop/bio sop/data/sample/sample_B11.tif",
+      "B12": "/home/natru/Documents/mech sop/bio sop/data/sample/sample_B12.tif"
+    },
+    "indices": {
+      "NDVI": "/home/natru/Documents/mech sop/bio sop/data/derived/pilani_NDVI.tif",
+      "NDWI": "/home/natru/Documents/mech sop/bio sop/data/derived/pilani_NDWI.tif",
+      "MNDWI": "/home/natru/Documents/mech sop/bio sop/data/derived/pilani_MNDWI.tif",
+      "SAVI": "/home/natru/Documents/mech sop/bio sop/data/derived/pilani_SAVI.tif",
+      "EVI": "/home/natru/Documents/mech sop/bio sop/data/derived/pilani_EVI.tif",
+      "LST_PROXY": "/home/natru/Documents/mech sop/bio sop/data/derived/pilani_LST_PROXY.tif",
+      "CLOUD_MASK": "/home/natru/Documents/mech sop/bio sop/data/derived/pilani_CLOUD_MASK.tif"
+    },
+    "clusters": "/home/natru/Documents/mech sop/bio sop/data/derived/pilani_CLUSTERS.tif"
+  },
+  "images_processed": 1,
+  "estimated_high_risk_areas": 1,
+  "cloud_coverage_pct": 0.01
+}

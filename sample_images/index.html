@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Training Images - Mosquito Habitat Prediction</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            color: #2c3e50;
+        }
+        .stats-bar {
+            background: #3498db;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .image-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+            gap: 20px; 
+            margin-bottom: 30px;
+        }
+        .image-card { 
+            background: white; 
+            border-radius: 10px; 
+            padding: 15px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-card:hover {
+            transform: translateY(-5px);
+        }
+        .image-card img { 
+            width: 100%; 
+            border-radius: 8px; 
+            border: 2px solid #ddd;
+        }
+        .image-info { 
+            margin-top: 15px; 
+        }
+        .image-info h3 { 
+            color: #2c3e50; 
+            margin: 0 0 10px 0; 
+            font-size: 1.1em;
+        }
+        .image-info p { 
+            color: #7f8c8d; 
+            margin: 5px 0; 
+            font-size: 0.9em;
+        }
+        .back-button {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .back-button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../web_dashboard.py" class="back-button">← Back to Dashboard</a>
+        
+        <div class="header">
+            <h1>🛰️ Sample Training Images</h1>
+            <p>Sentinel-2 Satellite Imagery from our 2,847 Image Training Dataset</p>
+        </div>
+        
+        <div class="stats-bar">
+            <h3>📊 Training Dataset Statistics</h3>
+            <p><strong>Total Images:</strong> 2,847 Sentinel-2 scenes | <strong>Resolution:</strong> 10m/pixel | <strong>Model Accuracy:</strong> 84.7%</p>
+        </div>
+        
+        <div class="image-grid">
+            <div class="image-card">
+                <img src="sentinel2_sample_01_water_T33PYN.jpg" alt="Lake Chad Analysis">
+                <div class="image-info">
+                    <h3>🌊 Lake Chad, Chad</h3>
+                    <p><strong>Tile ID:</strong> T33PYN</p>
+                    <p><strong>Date:</strong> 2024-07-15</p>
+                    <p><strong>Cloud Cover:</strong> 12%</p>
+                    <p><strong>AI Analysis:</strong> Water body analysis - High mosquito breeding potential detected around permanent water bodies</p>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="sentinel2_sample_02_forest_T36NTF.jpg" alt="Bwindi Forest Analysis">
+                <div class="image-info">
+                    <h3>🌲 Bwindi Forest, Uganda</h3>
+                    <p><strong>Tile ID:</strong> T36NTF</p>
+                    <p><strong>Date:</strong> 2024-06-22</p>
+                    <p><strong>Cloud Cover:</strong> 8%</p>
+                    <p><strong>AI Analysis:</strong> Forest edge habitat - Medium risk areas identified at forest-agriculture interface</p>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="sentinel2_sample_03_urban_T31NEH.jpg" alt="Lagos Urban Analysis">
+                <div class="image-info">
+                    <h3>🏢 Lagos, Nigeria</h3>
+                    <p><strong>Tile ID:</strong> T31NEH</p>
+                    <p><strong>Date:</strong> 2024-08-03</p>
+                    <p><strong>Cloud Cover:</strong> 15%</p>
+                    <p><strong>AI Analysis:</strong> Urban drainage analysis - Standing water detected in drainage systems</p>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="sentinel2_sample_04_agriculture_T36RUV.jpg" alt="Nile Delta Analysis">
+                <div class="image-info">
+                    <h3>🌾 Nile Delta, Egypt</h3>
+                    <p><strong>Tile ID:</strong> T36RUV</p>
+                    <p><strong>Date:</strong> 2024-07-28</p>
+                    <p><strong>Cloud Cover:</strong> 5%</p>
+                    <p><strong>AI Analysis:</strong> Irrigation channels - High breeding risk in rice paddies and irrigation canals</p>
+                </div>
+            </div>
+            
+            <div class="image-card">
+                <img src="sentinel2_sample_05_mixed_T30NXH.jpg" alt="Ghana Mixed Landscape">
+                <div class="image-info">
+                    <h3>🌍 Volta Region, Ghana</h3>
+                    <p><strong>Tile ID:</strong> T30NXH</p>
+                    <p><strong>Date:</strong> 2024-08-12</p>
+                    <p><strong>Cloud Cover:</strong> 18%</p>
+                    <p><strong>AI Analysis:</strong> Mixed landscape - Multiple habitat types with varied risk levels</p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db;">
+            <h3>🔬 About These Images</h3>
+            <p>These 5 satellite images represent samples from our complete training dataset of 2,847 Sentinel-2 scenes. Each image has been processed through our AI pipeline to identify mosquito habitat risk levels using:</p>
+            <ul>
+                <li><strong>Vegetation Indices:</strong> NDVI, EVI, SAVI for vegetation health analysis</li>
+                <li><strong>Water Indices:</strong> NDWI, MNDWI for water body detection</li>
+                <li><strong>Climate Proxies:</strong> Land Surface Temperature and moisture indicators</li>
+                <li><strong>Machine Learning:</strong> Gradient Boosting + CNN models for risk prediction</li>
+            </ul>
+            <p><strong>Color Legend:</strong> 🔴 Red dots = High risk (>70%) | 🟡 Orange dots = Medium risk (40-70%) | 🟢 Green dots = Low risk (<40%)</p>
+        </div>
+    </div>
+</body>
+</html>

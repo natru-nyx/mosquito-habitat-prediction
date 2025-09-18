@@ -1,0 +1,22 @@
+{
+  "product_name": "SAMPLE_SENTINEL2_GHANA_20230601",
+  "date": "2023-06-01",
+  "region": "test_region",
+  "cloud_cover": 5.0,
+  "bounds": [
+    -2.0,
+    6.0,
+    -1.0,
+    7.0
+  ],
+  "crs": "EPSG:4326",
+  "bands": {
+    "B02": "data/sample/sample_B02.tif",
+    "B03": "data/sample/sample_B03.tif",
+    "B04": "data/sample/sample_B04.tif",
+    "B08": "data/sample/sample_B08.tif",
+    "B11": "data/sample/sample_B11.tif",
+    "B12": "data/sample/sample_B12.tif"
+  },
+  "description": "Synthetic Sentinel-2 data for testing mosquito habitat prediction pipeline"
+}
